@@ -2,7 +2,7 @@
     <div id="navbar">
         <img id="logo" src="~/assets/img/pb-logo.jpg"/>
         <NuxtLink class="nav-btn" to="/">Home</NuxtLink>
-        <NuxtLink class="nav-btn" to="/about">About</NuxtLink>
+        <NuxtLink class="nav-btn" to="/about">About Us</NuxtLink>
         <NuxtLink class="nav-btn" to="/portfolio">Our Projects</NuxtLink>
         <NuxtLink class="nav-btn" to="/contact">Contact Us</NuxtLink>
         <NuxtLink class="nav-btn" to="/shop">Shop</NuxtLink>
