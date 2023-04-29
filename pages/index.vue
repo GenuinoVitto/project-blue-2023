@@ -2,7 +2,18 @@
     <div id="app">
         <div>
             <!-- Hero -->
-            
+            <v-carousel 
+                cycle
+                hide-delimiters
+                :show-arrows="false"    
+            >
+                <v-carousel-item 
+                    v-for="(item,i) in items" 
+                    :key="i"
+                    :src="item.img"
+                    cover
+                    ></v-carousel-item>
+            </v-carousel>
             <!-- Who we are -->
             <div id="introduction">
                 <h2>What is Project Blue?</h2>
@@ -30,6 +41,26 @@
 </template>
 
 <script>
+
+import img1 from '~/assets/img/hero-1.jpg'
+import img2 from '~/assets/img/hero-2.jpg'
+import img3 from '~/assets/img/hero-3.jpg'
+
 export default {
+    data(){
+        return {
+            items: [
+                {
+                    img: img1,
+                },
+                {
+                    img: img2,
+                },
+                {
+                    img: img3,
+                },
+            ]
+        }
+    }
 }
 </script>
