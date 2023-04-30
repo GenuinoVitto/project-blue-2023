@@ -1,3 +1,3 @@
 <template>
-    about
+    founding story
 </template>

@@ -1,0 +1,3 @@
+<template>
+    organizational structure
+</template>
