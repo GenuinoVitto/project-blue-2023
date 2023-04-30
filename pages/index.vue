@@ -20,7 +20,6 @@
                 <p>
                     Project Blue (PB) is a youth-led nonprofit organization that focuses on raising awareness and providing sustainable solutions on ocean pollution and marine conservation. It started as a cleanup idea that turned into an organization after the realization that cleanups aren’t enough and that we have to be more sustainable. We do a mix of physical and online projects that advocate for the oceans. It was founded in the province of Ilocos last December 2020.
                 </p>
-                <p>hello</p>
             </div>
             <!-- Mission -->
             <div id="mission">
