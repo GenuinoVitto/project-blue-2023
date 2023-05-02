@@ -1,17 +1,33 @@
 <template>
-    <div id="navbar">
-        <img id="logo" src="~/assets/img/pb-logo.jpg"/>
+    <nav>
+        <div id="logo">
+            <img src="~/assets/img/pb-logo.jpg"/>
+        </div>
+        <ul id="nav-links">
+            <li><NuxtLink class="nav-btn" to="/">Home</NuxtLink></li>
+            <li>
+                <NuxtLink class="nav-btn" to="/about/feature">About Us</NuxtLink>
+            </li>
+            <li>
+                <!-- dropdown -->
+                <NuxtLink class="nav-btn" to="/portfolio/boat">Our Projects</NuxtLink>
+            </li>
+            <li><NuxtLink class="nav-btn" to="/contact">Contact Us</NuxtLink></li>
+        </ul> 
+    </nav>
 
-        <NuxtLink class="nav-btn" to="/">Home</NuxtLink>
+    <!-- reponsive nav bar -->
+    <!-- <v-app-bar>
+        <v-app-bar-nav-icon>
+        </v-app-bar-nav-icon>
+    </v-app-bar>
 
-        <!-- dropdown -->
-        <NuxtLink class="nav-btn" to="/about/founder">About Us</NuxtLink> 
-        <!-- dropdown -->
-        <NuxtLink class="nav-btn" to="/portfolio/boat">Our Projects</NuxtLink> 
+    <v-navigation-drawer
+            v-model="drawer"
+            location="bottom"
+            temporary>
+    </v-navigation-drawer> -->
 
-        <NuxtLink class="nav-btn" to="/contact">Contact Us</NuxtLink>
-        <NuxtLink class="nav-btn" to="/shop">Shop</NuxtLink>
-    </div>
 </template>
 
 <script setup>
@@ -20,16 +36,20 @@
 
 <style lang="postcss" scoped>
 
-#logo{
-    @apply w-auto h-10
+nav {
+    @apply flex justify-around items-center min-h-[8vh] bg-[#ffffff] font-Quicksand;
 }
 
-#navbar {
-    @apply flex text-[#0f4c75] bg-white w-full py-0 top-28 gap-0 justify-between;
+img {
+    @apply w-auto h-8
+}
+
+#nav-links {
+    @apply flex w-1/3 justify-around;
 }
 
 .nav-btn {
-    @apply uppercase transition ease-in-out hover:bg-[#3382b8] hover:text-white whitespace-nowrap py-2 text-base text-center grow w-1/4 no-underline;
+    @apply transition duration-300 hover:text-[#3382b8] hover:ease-in-out;
 }
 
 </style>

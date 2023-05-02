@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <div>
+
             <!-- Hero -->
             <v-carousel 
                 cycle
@@ -14,8 +15,10 @@
                     cover
                     ></v-carousel-item>
             </v-carousel>
-
-            <div class="spacer"></div>
+            <section id="hero">
+                <h1>Project Blue</h1>
+                <h3>more than just cleanups...</h3> 
+            </section>
 
             <!-- Who we are -->
             <section id="introduction">
@@ -87,9 +90,6 @@ section {
     @apply bg-[#0f4c75] text-[#d8dee7] text-xl;
 }
 
-.spacer {
-    @apply aspect-[960/300] w-full bg-no-repeat bg-center bg-cover bg-[wave-1];
-}
 
 
 </style>
