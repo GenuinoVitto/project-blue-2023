@@ -14,27 +14,32 @@
                     cover
                     ></v-carousel-item>
             </v-carousel>
+
+            <div class="spacer"></div>
+
             <!-- Who we are -->
-            <div id="introduction">
+            <section id="introduction">
                 <h2>What is Project Blue?</h2>
                 <p>
                     Project Blue (PB) is a youth-led nonprofit organization that focuses on raising awareness and providing sustainable solutions on ocean pollution and marine conservation. It started as a cleanup idea that turned into an organization after the realization that cleanups aren’t enough and that we have to be more sustainable. We do a mix of physical and online projects that advocate for the oceans. It was founded in the province of Ilocos last December 2020.
                 </p>
-            </div>
+            </section>
+
+
             <!-- Mission -->
-            <div id="mission">
+            <section id="mission">
                 <h3>Mission</h3>
                 <p>
                     To preserve the beaches of the Philippines by designing sustainable solutions and providing educational campaigns to raise awareness and knowledge on ocean pollution and marine conservation.
                 </p>
-            </div>
+            </section>
             <!-- Vision -->
-            <div id="vision">
+            <section id="vision">
                 <h3>Vision</h3>
                 <p>
                     To inspire others to take action and have a community that appreciates, respects, and is aware of the environment's problems.
                 </p>
-            </div>
+            </section>
         </div>
     </div>
 </template>
@@ -63,3 +68,28 @@ export default {
     }
 }
 </script>
+
+<style lang="postcss" scoped>
+
+section {
+    @apply relative flex flex-col items-center min-h-screen p-60 font-Quicksand;
+}
+
+#introduction {
+    @apply bg-[#bbe1fb] text-[#163b74] text-xl;
+}
+
+#mission {
+    @apply bg-[#3382b8] text-[#d8dee7] text-xl;
+}
+
+#vision {
+    @apply bg-[#0f4c75] text-[#d8dee7] text-xl;
+}
+
+.spacer {
+    @apply aspect-[960/300] w-full bg-no-repeat bg-center bg-cover bg-[wave-1];
+}
+
+
+</style>

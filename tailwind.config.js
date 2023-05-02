@@ -9,6 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        '960/300':'960 / 300',
+      },
+      backgroundImage: {
+        'wave-1': "url('~/assets/img/wave-1.svg')",
+      },
+      fontFamily: {
+        Quicksand: ["Quicksand", "sans-serif"],
+      },
       screens: {
         'sm': '640px',
         'md': '768px',
