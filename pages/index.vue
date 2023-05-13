@@ -15,8 +15,6 @@
                     ></v-carousel-item>
             </v-carousel>
 
-            <div class="spacer"></div>
-
             <!-- Who we are -->
             <section id="introduction">
                 <h2>What is Project Blue?</h2>
@@ -85,10 +83,6 @@ section {
 
 #vision {
     @apply bg-[#0f4c75] text-[#d8dee7] text-xl;
-}
-
-.spacer {
-    @apply aspect-[960/300] w-full bg-no-repeat bg-center bg-cover bg-[wave-1];
 }
 
 
