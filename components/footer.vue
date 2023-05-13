@@ -1,3 +1,3 @@
 <template>
-    <h1>shop</h1>
+    footer
 </template>

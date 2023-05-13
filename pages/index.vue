@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <div>
+
             <!-- Hero -->
             <v-carousel 
                 cycle
@@ -14,6 +15,10 @@
                     cover
                     ></v-carousel-item>
             </v-carousel>
+            <section id="hero">
+                <h1>Project Blue</h1>
+                <h3>more than just cleanups...</h3> 
+            </section>
 
             <!-- Who we are -->
             <section id="introduction">
@@ -84,6 +89,7 @@ section {
 #vision {
     @apply bg-[#0f4c75] text-[#d8dee7] text-xl;
 }
+
 
 
 </style>
