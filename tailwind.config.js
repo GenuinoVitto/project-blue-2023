@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         'wave-1': "url('~/assets/img/wave-1.svg')",
+        'hero': "url('~/assets/img/hero-1.jpg')",
       },
       fontFamily: {
         Quicksand: ["Quicksand", "sans-serif"],

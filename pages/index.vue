@@ -15,9 +15,16 @@
                     cover
                     ></v-carousel-item>
             </v-carousel>
-            <section id="hero">
-                <h1>Project Blue</h1>
-                <h3>more than just cleanups...</h3> 
+
+            <section class="flex flex-col h-screen bg-center bg-cover bg-blend-overlay bg-black/20 bg-fixed" style="background-image: url('~/assets/img/pb-logo.jpg')">
+                <div class="flex-1 items-center">
+                    <!-- Hero 1 -->
+                    <div class="text-center mx-auto">
+                        <h1 class="text-7xl font-semibold">Project Blue</h1>
+                        <hr>
+                        <h3 class="font-light text-3xl mt-5">more than just cleanups...</h3>
+                    </div> 
+                </div>
             </section>
 
             <!-- Who we are -->
@@ -79,7 +86,7 @@ section {
 }
 
 #introduction {
-    @apply bg-[#bbe1fb] text-[#163b74] text-xl;
+    @apply bg-[79a2b0] text-[#163b74] text-xl;
 }
 
 #mission {

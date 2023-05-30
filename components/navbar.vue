@@ -7,28 +7,40 @@
 
         <ul>
             <li>
-                <NuxtLink class="nav-btn" to="/">Home</NuxtLink>
+                <div>
+                    <button id="dropdown" class="peer transition ease-in-out duration-500 uppercase hover:text-[#79a2b0] whitespace-nowrap text-base w-36 no-underline">
+                        <NuxtLink class="nav-btn" to="/">Home</NuxtLink>
+                    </button>
+                </div>
+                
             </li>
             <li>
-                <button class="peer px-5 py-2 bg-green-600 hover:bg-green-700 text-white">dropdown</button>
-                <div class="hidden peer-hover:flex hover:flex
-                w-[200px]
-                flex-col bg-white drop-shadow-lg">
-                    <NuxtLink class="nav-btn" to="/about/feature">About Us</NuxtLink>
+                <div>
+                    <button id="dropdown" class="peer transition ease-in-out duration-500 uppercase hover:text-[#79a2b0] whitespace-nowrap text-base w-36 no-underline">About Us</button>
+
+                    <div id="dropdown-content" class="hidden peer-hover:flex hover:flex w-36 flex-col bg-white drop-shadow-lg fixed z-10 rounded-md shadow transition ease-in-out duration-500">
+                        <NuxtLink class="drop-btn" to="/about/feature">Feature</NuxtLink>
+                        <NuxtLink class="drop-btn" to="/about/founder">Founder</NuxtLink>
+                        <NuxtLink class="drop-btn" to="/about/involve">Involve</NuxtLink>
+                        <NuxtLink class="drop-btn" to="/about/organization">Organization</NuxtLink>
+                    </div>
+
                 </div>
             </li>
             <li>
-                <NuxtLink class="nav-btn" to="/portfolio/boat">Our Projects</NuxtLink>
+                <div>
+                    <button id="dropdown" class="peer transition ease-in-out duration-500 uppercase hover:text-[#79a2b0] whitespace-nowrap text-base w-36 no-underline">Our Projects</button>
+
+                    <div id="dropdown-content" class="hidden peer-hover:flex hover:flex w-36 flex-col bg-white drop-shadow-lg fixed z-10 rounded-md shadow transition ease-in-out duration-500">
+                        <NuxtLink class="drop-btn" to="/about/feature">Plastic Boat</NuxtLink>
+                        <NuxtLink class="drop-btn" to="/about/founder">Clean-Ups</NuxtLink>
+                        <NuxtLink class="drop-btn" to="/about/involve">Campaigns</NuxtLink>
+                        <NuxtLink class="drop-btn" to="/about/organization">Biodiversity</NuxtLink>
+                    </div>
+                </div>
             </li>
-            <li>
-                <NuxtLink class="nav-btn" to="/contact">Contact Us</NuxtLink>
-            </li>
-            <li>
-                <NuxtLink class="nav-btn" to="/shop">Shop</NuxtLink>
-            </li>
-            
-            <button>
-                Get Started
+            <button id="gs">
+                <NuxtLink to="/contact">Want to help? 😊</NuxtLink>
             </button>
         </ul>
     </div>
@@ -47,7 +59,7 @@ span {
 }
 
 #navbar {
-    @apply p-5 bg-white shadow md:flex md:items-center md:justify-between;
+    @apply p-5 bg-white shadow md:flex md:items-center md:justify-between font-bold text-xl;
 }
 
 ul {
@@ -56,11 +68,19 @@ ul {
 li {
     @apply mx-4 my-6 md:my-0;
 }
-button {
+#gs {
     @apply bg-[#79a2b0] text-white duration-500 px-6 py-2 mx-4 hover:bg-[#3382b8] rounded;
 }
 .nav-btn {
-    @apply uppercase transition ease-in-out duration-500 hover:text-[#79a2b0] whitespace-nowrap py-2 text-base text-center grow w-1/4 no-underline;
+    @apply uppercase transition ease-in-out duration-500 hover:text-[#79a2b0] whitespace-nowrap py-2 text-base text-center grow no-underline;
+}
+
+.drop-btn {
+    @apply uppercase transition ease-in-out duration-300 hover:text-white hover:bg-[#79a2b0] relative rounded-md w-36 whitespace-nowrap py-2 text-base text-center no-underline;
+}
+
+#dropdown:hover #dropdown-content {
+    @apply flex transition ease-in-out duration-500;
 }
 
 </style>

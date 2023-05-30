@@ -41,7 +41,7 @@ section {
 }
 
 #bodyOne {
-    @apply bg-[#bbe1fb] text-[#163b74] text-xl;
+    @apply bg-[#79a2b0] text-[#163b74] text-xl;
 }
 
 #bodyTwo {
