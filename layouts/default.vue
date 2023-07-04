@@ -5,7 +5,7 @@
                 <navbar/>
                 <Nuxt />
                 <slot />
-                <footer />
+                <cool/>
             </div>
         </v-app>
     </div>

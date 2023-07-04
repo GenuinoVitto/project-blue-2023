@@ -1,8 +1,29 @@
 <template>
     <div id="app">
-        <div>
-
+        <div class="snap-y snap-mandatory">
             <!-- Hero -->
+            <section class="flex flex-col bg-center bg-cover bg-blend-overlay bg-black/40 bg-fixed bg-[url('~/assets/img/hero-1.jpg')] h-screen">
+                <div class="flex-1 items-center">
+                    <!-- Hero 1 -->
+                    <div class="text-center mx-auto">
+                        <h1 class="text-8xl font-semibold text-white">Project Blue</h1>
+                        <br>
+                        <hr>
+                        <h3 class="font-light text-3xl mt-2 text-white">more than just cleanups...</h3>
+                    </div> 
+                </div>
+            </section>
+            
+            <div class="spacer bg-[url('~/assets/img/layer-1.svg')]"></div>
+            <!-- Who we are -->
+            <section id="introduction">
+                <h2>What is Project Blue?</h2>
+                <p>
+                    Project Blue (PB) is a youth-led nonprofit organization that focuses on raising awareness and providing sustainable solutions on ocean pollution and marine conservation. It started as a cleanup idea that turned into an organization after the realization that cleanups aren't enough and that we have to be more sustainable. We do a mix of physical and online projects that advocate for the oceans. It was founded in the province of Ilocos last December 2020.
+                </p>
+            </section>
+            <div class="spacer bg-[url('~/assets/img/layer-2.svg')]"></div>
+            
             <v-carousel 
                 cycle
                 hide-delimiters
@@ -16,33 +37,18 @@
                     ></v-carousel-item>
             </v-carousel>
 
-            <section class="flex flex-col h-screen bg-center bg-cover bg-blend-overlay bg-black/20 bg-fixed" style="background-image: url('~/assets/img/pb-logo.jpg')">
-                <div class="flex-1 items-center">
-                    <!-- Hero 1 -->
-                    <div class="text-center mx-auto">
-                        <h1 class="text-7xl font-semibold">Project Blue</h1>
-                        <hr>
-                        <h3 class="font-light text-3xl mt-5">more than just cleanups...</h3>
-                    </div> 
-                </div>
-            </section>
-
-            <!-- Who we are -->
-            <section id="introduction">
-                <h2>What is Project Blue?</h2>
-                <p>
-                    Project Blue (PB) is a youth-led nonprofit organization that focuses on raising awareness and providing sustainable solutions on ocean pollution and marine conservation. It started as a cleanup idea that turned into an organization after the realization that cleanups aren’t enough and that we have to be more sustainable. We do a mix of physical and online projects that advocate for the oceans. It was founded in the province of Ilocos last December 2020.
-                </p>
-            </section>
-
-
+            <div class="spacer bg-[url('~/assets/img/layer-1.svg')]"></div>
             <!-- Mission -->
             <section id="mission">
+                <img class="items-left" src="~/assets/img/pb-logo.jpg" alt="template">
                 <h3>Mission</h3>
                 <p>
                     To preserve the beaches of the Philippines by designing sustainable solutions and providing educational campaigns to raise awareness and knowledge on ocean pollution and marine conservation.
                 </p>
             </section>
+            <div class="spacer bg-[url('~/assets/img/layer-2.svg')]"></div>
+
+            <div class="spacer bg-[url('~/assets/img/layer-1.svg')]"></div>
             <!-- Vision -->
             <section id="vision">
                 <h3>Vision</h3>
@@ -50,6 +56,7 @@
                     To inspire others to take action and have a community that appreciates, respects, and is aware of the environment's problems.
                 </p>
             </section>
+            <div class="spacer bg-[url('~/assets/img/layer-2.svg')]"></div>
         </div>
     </div>
 </template>
@@ -86,17 +93,23 @@ section {
 }
 
 #introduction {
-    @apply bg-[79a2b0] text-[#163b74] text-xl;
+    @apply bg-[#79a2b0] text-white text-xl;
 }
 
 #mission {
-    @apply bg-[#3382b8] text-[#d8dee7] text-xl;
+    @apply bg-[#79a2b0] text-white text-xl;
 }
 
 #vision {
-    @apply bg-[#0f4c75] text-[#d8dee7] text-xl;
+    @apply bg-[#79a2b0] text-white text-xl;
 }
 
-
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 </style>
